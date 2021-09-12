@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Switch
+        android:id="@+id/switchtheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="right"
+        android:text="Ciemny motyw"
+        tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textViewDayAndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="@color/secondary"
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5sp"
+        app:cardBackgroundColor="@color/primaryVisibility">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextCity"
+                android:layout_height="wrap_content"
+                android:layout_width="350sp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:hint="Znajdź inne miasto"
+                android:textColorHint="@color/white"
+                android:layout_gravity="left"
+                android:layout_marginHorizontal="10sp"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonSearch"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="right"
+                android:backgroundTint="@color/secondary"
+                android:scaleType="fitCenter"
+                android:tint="@color/black"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5sp"
+        app:cardBackgroundColor="@color/primaryVisibility"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                android:layout_marginVertical="5sp"
+                app:cardBackgroundColor="@color/primaryVisibility"
+                app:cardCornerRadius="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="20dp"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                    <TextView
+                        android:id="@+id/textViewDegree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/imageViewWeather"
+                        android:layout_width="300px"
+                        android:layout_height="300px"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/textViewWeather"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:layout_margin="20sp"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                android:layout_marginVertical="5sp"
+                app:cardBackgroundColor="@color/primaryVisibility"
+                app:cardCornerRadius="30dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5sp">
+
+                        <ImageView
+                            android:id="@+id/imageViewPressure"
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/barometr" />
+
+                        <TextView
+                            android:id="@+id/textViewPressure"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </TableRow>
+                </TableLayout>
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5sp">
+
+                        <ImageView
+                            android:id="@+id/imageViewSunrise"
+                            android:layout_width="150px"
+                            android:layout_height="150px"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/sunrise" />
+
+                        <TextView
+                            android:id="@+id/textViewsunrise"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:text=""
+                            android:layout_marginTop="15dp"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+
+
+                        <ImageView
+                            android:id="@+id/imageViewSunset"
+                            android:layout_width="150px"
+                            android:layout_height="150px"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/sunset" />
+
+                        <TextView
+                            android:id="@+id/textViewSunset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="15dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                </TableLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pogodynka</string>
+    <string name="cisnienie">Ciśnienie: </string>
+    <string name="temperatura">Temperatura: </string>
+    <string name="wschod">Wschód Słońca: </string>
+    <string name="zachod">Zachód Słońca: </string>
+
+</resources>
